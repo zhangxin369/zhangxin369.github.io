@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>下拉刷新dome</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+
+<body>
+    <div>下拉加载更多</div>
+    <div class="main" style="height:600px;overflow:auto;">
+        <ul class="U" style="height: 800px">
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+            <li>E</li>
+            <li>F</li>
+        </ul>
+    </div>
+
+    <script type="text/javascript">  
+        $(document).ready(function () {
+            $(".main").unbind("scroll").bind("scroll", function (e) {
+                var sum = this.scrollHeight;
+                if (sum <= $(this).scrollTop() + $(this).height()) {
+                    $.ajax(
+                        {
+                            url:"/test/xw.txt",
+                            async:false,
+                            dataType:'json',
+                            success:function(data){
+                                for(var i=0; i<data.links.length;i++){
+                                    //console.log(data.links[i].name);
+                                    $('.U').append('<li>'+ data.links[i].name +'</li>')
+                                }
+                            }
+                        }
+                    );
+                  
+                    
+                    //$(".main").append($(".child").clone());
+                }
+                //console.log('ok');
+
+            });
+        });  
+    </script>
+</body>
+
+</html>

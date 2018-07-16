@@ -1,0 +1,19 @@
+header{
+    margin-top: 100px;
+    margin-bottom: 80px;
+    font-size: 5.28rem !important;
+    font-family: '汉仪大黑简' !important;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: rgb(68, 68, 68);
+    text-align: center;
+}
+
+p{
+    font-family: '汉仪细圆简';
+  /*  font-size: 28px;*/
+    line-height: 50px;
+    letter-spacing: 9px;
+
+    margin-bottom: 300px;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>书签页</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+</head>
+<style>
+
+    .main {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    section>a {
+        margin-top: -26px;
+    }
+
+    .img_clic {
+        transition: all .1s;
+    }
+</style>
+
+<body>
+
+    <section class="main">
+        <span style="padding-right: 47px;">|丽水摄影博物馆|Photography Museum of Lishui China</span>
+
+        <section>
+            <a href="test.4-1.html">
+                <img class="img_clic" src="/images/前言/1.png">
+            </a>
+            <a href="test.3-1.html">
+                <img class="img_clic" src="/images/书签页/20180612150224.png">
+            </a>
+            <a href="test.2.html">
+                <img class="img_clic" src="/images/书签页/20180612150214.png">
+            </a>
+            <a href="test.html">
+                <img class="img_clic" src="/images/书签页/20180612150210.png">
+            </a>
+            <a class="img_clic" href="4-4.html">
+                <img src="/images/书签页/20180612150204.png">
+                <div id="nra"></div>
+            </a>
+
+        </section>
+
+        <section style="text-align: center;margin-bottom: -51px;">
+            <a href="home.html">
+                <img style="margin-top: 23px;" src="img/8.png">
+            </a>
+        </section>
+    </section>
+
+    <script>
+        /*
+        var rest;
+
+        function ajaxP() {
+            var res, rest;
+            var xmlHttp = null;
+            if (window.XMLHttpRequest) {
+                xmlHttp = new XMLHttpRequest();
+            }
+            else {
+                xlmHttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlHttp.open("GET","test.2.html",true);
+            xmlHttp.send();
+
+            xmlHttp.onreadystatechange = function() {
+                if(xmlHttp.readyState == 4 && xmlHttp.status==200)
+                {
+                    res = xmlHttp.response;
+                }
+                rest = res;
+            }
+            console.log(rest);
+        }
+
+        var clic = document.querySelectorAll('.img_clic');
+        ajaxP();
+        document.getElementById('nra').innerHTML = rest;
+
+        for (var i = 0; i < clic.length; i++) {
+            clic[i].addEventListener('click', function () {
+                alert('o');
+            });
+        }*/
+
+    </script>
+     <script src="js/app.js"></script>
+</body>
+
+</html>

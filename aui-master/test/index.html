@@ -1,0 +1,447 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"
+    />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="../css/aui.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .img {
+        overflow: hidden;
+    }
+
+    .img>a>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .cont-t {
+        width: 343px;
+        height: 35px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .iocs {
+        background-image: url('ioc/css_sprites.png') !important;
+        background-repeat: no-repeat;
+        background-size: 500px !important;
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+    }
+
+    .iocA {
+        background-position: -200px -95px !important;
+    }
+
+    .iocB {
+        background-position: -103px -94px;
+    }
+
+    .iocC {
+        
+        background-position: -6px -195px !important;
+    }
+
+    .iocD {
+        background-position: -400px 7px !important;;
+    }
+
+    .iocE {
+        background-position: -303px -195px !important;
+    }
+
+    .iocF {
+        background-position: -98px -196px !important;
+    }
+
+    .iocG {
+        background-position: -402px -200px !important;
+       /*
+        background-position: -526px -261px !important;
+        background-size: 670px !important;
+        */
+    }
+
+    .iocH {
+        background-position: -394px -95px !important;
+    }
+
+    .iocI {
+        background-position: -201px -195px !important;
+    }
+
+    .iocJ {
+        background-position: -6px 5px !important;
+    }
+
+    .iocM {
+        background-position: -299px -95px !important;
+    }
+
+    .iocN {
+        background-position: -302px 5px !important;
+    }
+
+    .iocN2 {
+        background-position: -97px 5px !important;
+    }
+
+    .iocN3 {
+        background-position: -4px -95px !important;
+    }
+
+    .iocN4 {
+        background-position: -204px 7px !important;
+    }
+
+    .bm>p {
+        height: 34px;
+        overflow: hidden;
+        margin-top: -26px;
+    }
+</style>
+
+<body>
+
+
+    <div class="main">
+        <div class="aui-tab" id="tab">
+            <div class="aui-tab-item aui-active A">关注</div>
+            <!--<div class="aui-tab-item B">热点</div>-->
+            <div class="aui-tab-item">
+                <a href="http://wx.ld96345.gov.cn/weixin/index.aspx">便民</a>
+            </div>
+            <div style="margin-left: 10px;margin-right: 10px;" class="aui-tab-item">
+                <a href="http://www.lvhego.com/app/index.php?i=1&c=entry&m=ewei_shopv2&do=mobile&r=diypage&id=20">
+                    莲都精选
+                </a>
+            </div>
+
+            <div class="aui-tab-item">
+                <a href="http://www.1818.tv/wap/">智慧出行</a>
+            </div>
+        </div>
+        <span class="tad-tb A"></span>
+    </div>
+
+    <div class="main" style="margin-bottom: 160px;">
+        <div class="aui-searchbar" id="search">
+            <div class="aui-searchbar-input aui-border-radius" tapmode onclick="doSearch()">
+                <form action="javascript:search();">
+                    <i class="aui-iconfont aui-icon-search"></i>
+                    <input type="search" placeholder="电商资讯" id="search-input">
+                </form>
+            </div>
+        </div>
+
+        <!--轮播-->
+        <div class="block" style="height: 267px;border-radius:8px;margin: 0 auto;margin-top: 20px;margin-bottom: 30px">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="http://www.lvhego.com/app/index.php?i=1&c=entry&m=ewei_shopv2&do=mobile&r=diypage&id=20">
+                            <img src="20180518153913.png" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA4NTg1MDA1NA==&scene=126#wechat_redirect">
+                <img style="display: inline-block;" alt='今日热点' src='rd2.png' />
+            </a>
+        </div>
+        <div class="block">
+            <div class="cont">
+                <div class="img">
+                    <a href="https://mp.weixin.qq.com/s/YWb_WRZCeBMUx9-OB_kHuw">
+                        <img src="http://cms-bucket.nosdn.127.net/2018/07/12/bcc6e42450474db6953a56d15198aebc.png?imageView&thumbnail=550x0">
+                    </a>
+                </div>
+                <a href="https://mp.weixin.qq.com/s/YWb_WRZCeBMUx9-OB_kHuw">
+                    <p class="cont-t">纳爱斯集团党委书记、总裁庄启传逝世，享年67岁！</p>
+                </a>
+            </div>
+
+            <div class="cont">
+                <div class="img">
+                    <a href="https://mp.weixin.qq.com/s/g8npQSBRwv8UVQWMtTKKaA">
+                        <img src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1531296219&di=56095b70a98cff59798ac66f193a55b7&src=http://minsheng.youth.cn/mszxgch/tqzx/201807/W020180708610970338064.jpg">
+                    </a>
+                </div>
+                <a href="https://mp.weixin.qq.com/s/g8npQSBRwv8UVQWMtTKKaA">
+                    <p class="cont-t">紧急发布！超强台风“玛莉亚”刚刚登陆！狂风暴雨将至，丽水人速看！</p>
+                </a>
+            </div>
+
+
+
+  
+
+            <img style="margin-top: 14px;" src="http://pic.caigoubao.cc/603866/b3e25a95c0ae582f9ee3f3636b3cc7f8.jpg" alt="">
+        </div>
+
+        <div style="margin-top: 40px" class="block">
+            <a href="http://pic.caigoubao.cc/603866/b3e25a95c0ae582f9ee3f3636b3cc7f8.jpg">
+                <img style="display: inline-block;" alt='电商' src='ds.png' />
+            </a>
+        </div>
+        <div class="block">
+            <div class="cont">
+                <div class="img">
+                    <a href="http://www.ebrun.com/newspoll/65.html?eb=hp_home_pcol_xpplm">
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1531306855854&di=1e7e6717756965a5e4bb2e16814f1231&imgtype=0&src=http%3A%2F%2Fimg.jrzj.com%2Fuploadfile%2F2017%2F0630%2F20170630092431740.jpg" />
+                    </a>
+                </div>
+                <a href="http://www.ebrun.com/newspoll/65.html?eb=hp_home_pcol_xpplm">
+                    <p class="cont-t">微信支付宝公开互怼：关于底线，我们不一样！</p>
+                </a>
+            </div>
+
+            <div class="cont">
+                <div class="img">
+                    <a href="http://www.ebrun.com/20180711/285752.shtml?eb=com_chan_lcol_fylb">
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1531306650483&di=5534e1038883ba93886adad7f98f2ea9&imgtype=0&src=http%3A%2F%2Fp1.qhimgs4.com%2Ft0111e695e1d2f6f9e0.jpg" />
+                    </a>
+                </div>
+                <a href="http://www.ebrun.com/20180711/285752.shtml?eb=com_chan_lcol_fylb">
+                    <p class="cont-t">亚马逊做线下 沃尔玛做电商 谁的前景好？</p>
+                </a>
+            </div>
+
+
+  
+
+            <img style="margin-top: 14px;" src="http://pic.caigoubao.cc/603866/%E7%8C%8E%E8%B1%B9%E6%88%AA%E5%9B%BE20180712115139.png" alt="广告" />
+
+        </div>
+        <div style="margin-top: 40px" class="block">
+            <a href="http://wx.ld96345.gov.cn/weixin/index.aspx">
+                <img style="display: inline-block;" src='bm.png'>
+            </a>
+        </div>
+
+        <div class="block">
+                <div class="cont bm">
+
+                        <div class="img bm">
+                            <div>
+                                <a href="http://zjghyy.yyhj.zjzwfw.gov.cn/#/home">
+                                    <div class="iocA iocs"></div>
+                                </a>
+                            </div>
+                        </div>
+        
+                        <p>治疗挂号</p>
+        
+        
+                    </div>
+                    <div class="cont bm">
+                            <div class="img bm">
+                                <div>
+                                    <a href="http://zjjsyjfcx.yyhj.zjzwfw.gov.cn/wap/drvQuery.do">
+                                        <div class="iocC iocs"></div>
+                                    </a>
+                                </div>
+                            </div>
+            
+                            <p>驾驶员积分</p>
+            
+                        </div>
+     
+                        <div class="cont bm">
+                                <div class="img bm">
+                                    <div>
+                                        <a href="http://zjxsrcm.yyhj.zjzwfw.gov.cn">
+                                            <div class="iocD iocs"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                
+                                <p>新生儿重名</p>
+                
+                            </div>
+
+    
+                            <div class="cont bm">
+                                    <div class="img bm">
+                                        <div>
+                                            <a href="http://zjjhdj.yyhj.zjzwfw.gov.cn">
+                                                <div class="iocF iocs"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>结婚登记预约</p>
+                                </div>
+                           
+                                <div class="cont bm">
+                                        <div class="img bm">
+                                            <div>
+                                                <a href="http://zjtqyb.yyhj.zjzwfw.gov.cn">
+                                                    <div class="iocG iocs"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p>天气预报</p>
+                                    </div>
+            <div class="cont bm">
+                <div class="img bm">
+                    <div>
+                        <a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx11acf7500acda8ce&redirect_uri=http%3A%2F%2Fapi.lvwan365.com%2Fh5%2F11%2Fweixin%2Fnuoche.html&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect">
+                            <div class="iocH iocs"></div>
+                        </a>
+                    </div>
+                </div>
+                <p>一键挪车</p>
+            </div>
+
+
+            <div class="cont bm">
+                <div class="img bm">
+                    <div>
+                        <a href="http://jtzs.lishui.gov.cn:6080/zzwfcl/handleVio_notice.do?from=singlemessage&isappinstalled=0">
+                            <div class="iocJ iocs"></div>
+                        </a>
+                    </div>
+                </div>
+                <p>机动车违法</p>
+            </div>
+            <div class="cont bm">
+                    <div class="img bm">
+                        <div>
+                            <a href="http://zjcrjbz.yyhj.zjzwfw.gov.cn/wap/crjQuery.do">
+                                <div class="iocN2 iocs"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <p>出入境办证</p>
+                </div>
+   
+                <div class="cont bm">
+                        <div class="img bm">
+                            <div>
+                                <a href="http://zjgssslk.yyhj.zjzwfw.gov.cn">
+                                    <div class="iocN3 iocs"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <p>高速实时路况</p>
+                    </div>    
+
+            <div class="cont bm">
+                <div class="img bm">
+                    <div>
+                        <a href="http://typhoon.yyhj.zjzwfw.gov.cn">
+                            <div class="iocN4 iocs"></div>
+                        </a>
+                    </div>
+                </div>
+                <p>实时台风</p>
+            </div>
+
+            <img style="margin-top: 23px;" src="gg3.png" alt="">
+        </div>
+        <div style="margin-top: 40px" class="block">
+            <image style="display: inline-block;" alt='美食' src='ms.png'></image>
+        </div>
+        <div class="block">
+            <div class="cont">
+                <div class="img">
+                    <a href="https://mp.weixin.qq.com/s/GPxXhEm4-J5C4HfSSQWXJg">
+                        <img src="20180518102736.jpg">
+                    </a>
+                </div>
+                <a href="https://mp.weixin.qq.com/s/GPxXhEm4-J5C4HfSSQWXJg">
+                    <p class="cont-t">丽水这家泡面博物馆，每一碗面都是一场浪漫的异国旅行。</p>
+                </a>
+            </div>
+
+            <div class="cont">
+                <div class="img">
+                    <a href="http://k.sina.com.cn/article_2077491865_7bd40299001002xzp.html?from=travel">
+                        <img src="20180518103009.jpg">
+                    </a>
+                </div>
+                <a href="http://k.sina.com.cn/article_2077491865_7bd40299001002xzp.html?from=travel">
+                    <p class="cont-t">舌尖上的丽水 有机夜宴丽水山耕</p>
+                </a>
+
+
+            </div>
+   
+
+    
+        </div>
+    </div>
+    <footer class="aui-bar aui-bar-tab main" id="footer">
+        <div class="aui-bar-tab-item" tapmode>
+            <i class="aui-iconfont aui-icon-home"></i>
+            <div class="aui-bar-tab-label">首页</div>
+        </div>
+        <div class="aui-bar-tab-item" tapmode>
+            <a href='https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzA4NTg1MDA1NA==&scene=126#wechat_redirect'>
+                <i class="aui-iconfont aui-icon-star"></i>
+                <div class="aui-bar-tab-label">热点</div>
+            </a>
+        </div>
+        <div class="aui-bar-tab-item" tapmode>
+            <a href="http://wx.ld96345.gov.cn/weixin/index.aspx">
+                <i class="aui-iconfont aui-icon-cart"></i>
+                <div class="aui-bar-tab-label">便民</div>
+            </a>
+        </div>
+        <div class="aui-bar-tab-item" tapmode>
+                <a href="http://www.lvhego.com/app/index.php?i=1&c=entry&m=ewei_shopv2&do=mobile&r=diypage&id=20">
+                    <i class="aui-iconfont aui-icon-my"></i>
+                    <div class="aui-bar-tab-label">莲都精选</div>
+                </a>
+        </div>
+    </footer>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/aui-tab.js"></script>
+<script>
+    var tab = new auiTab({
+        element: document.getElementById("tab"),
+        index: 1,
+        repeatClick: false
+    }, function (ret) {
+        //45起始位置,126块宽
+        var elWidth = (document.querySelector('#tab').offsetWidth / 4);
+        var childCount = document.querySelector('#tab').childElementCount;
+        var currWidth = document.querySelector('.tad-tb').offsetWidth;
+
+        var initX = elWidth / 2 - currWidth / 2;
+        document.querySelector('.tad-tb').style.transition = 'all .2s';
+        document.querySelector('.tad-tb').style.transform = 'translateX(' + (((((ret.index) - 1) * elWidth) + initX) - 8) + "px)";
+    });
+
+    document.querySelector('.B').addEventListener('click', function () {
+        setTimeout("window.location.href = 'B.html'", 300);
+    });
+
+    /*
+    window.onload = function () {
+        var elWidth = (document.querySelector('#tab').offsetWidth / 6);
+        var currWidth = document.querySelector('.tad-tb').offsetWidth;
+        var initX = (elWidth / 2 - currWidth / 2) - 2;
+        document.querySelector('.tad-tb').style.transform = 'translateX(' + initX + "px)";
+    }*/
+    var swiper = new Swiper('.swiper-container');
+
+</script>
+
+</html>
